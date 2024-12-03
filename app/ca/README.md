@@ -1,0 +1,1 @@
+Aquí se almacenará el certificado de la CA y la key de la CA

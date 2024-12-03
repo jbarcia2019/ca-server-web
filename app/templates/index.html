@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Certificados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em auto;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            width: 80%;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Generador de Certificados SSL</h1>
+    <form action="/generate" method="POST">
+        <input type="text" name="domain" placeholder="Ingrese el dominio (e.g., dominio.local)" required>
+        <button type="submit">Generar Certificado</button>
+    </form>
+</body>
+
+</html>

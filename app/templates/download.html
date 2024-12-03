@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados Generados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em auto;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+
+        a:hover {
+            color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Certificados Generados</h1>
+    <p>Certificados para el dominio <strong>{{ domain }}</strong>:</p>
+    <a href="{{ private_key }}" download>Descargar Clave Privada</a>
+    <a href="{{ certificate }}" download>Descargar Certificado Público</a>
+    <a href="/ca" download>Descargar Certificado CA</a>
+    <a href="/">Volver al Inicio</a>
+</body>
+
+</html>

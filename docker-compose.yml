@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  cert-gen:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/app
