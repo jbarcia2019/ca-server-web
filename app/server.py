@@ -51,7 +51,7 @@ def generate_cert():
     # Generar Certificado
     subprocess.run([
         "openssl", "x509", "-req", "-in", csr_path, "-CA", CA_CERT, "-CAkey", CA_KEY,
-        "-CAcreateserial", "-out", cert_path, "-days", "3650", "-sha256"
+        "-CAcreateserial", "-out", cert_path, "-days", "1095", "-sha256"
     ])
 
     return render_template('download.html', 
